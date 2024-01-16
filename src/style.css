@@ -11,6 +11,7 @@
     /* Font size */
     --font-size-regular: 1rem;
     --font-size-medium: 1.5rem;
+    --font-size-large: 2rem;
     
     /* Font weight */
     --font-weight-extra-light: 200;
@@ -54,6 +55,9 @@ button{
 button:hover{
     background-color: var(--secondary-color-dark);
 }
+.container{
+    padding: 0 120px;
+}
 
 /* Header */
 header{
@@ -73,5 +77,38 @@ header{
     font-weight: var(--font-weight-medium);
     padding: 0 30px;
     color: var(--accent-color);
+}
+.nav_link:hover{
+    color: var(--secondary-color);
+}
 
+/* Home Section */
+.home_container{
+    padding: 50px;
+}
+.home_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.home_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home_description h1, h2, p{
+    margin-bottom: 10px;
+}
+.home_description h1, h2{
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
+    color: var(--accent-color);
+}
+.home_description h2{
+    color: var(--secondary-color);
+}
+.home_description p{
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-regular);
+    color: var(--accent-color);
 }
