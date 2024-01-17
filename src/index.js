@@ -12,7 +12,7 @@ function renderOneCar(car) {
             <p>
                 <span class="car_count">${car.available}</span> Available
             </p>
-            <button>Reserve</button>
+            <button id="reserve" >Reserve</button>
         </div> 
     `
     // Add the car card to the DOM
@@ -22,7 +22,7 @@ function renderOneCar(car) {
 // Fetch Requests
 // Get Fetch for all car resources
 function getAllCars() {
-    fetch('http://localhost:3000/Cars')
+    fetch('https://cars-api-m7at.onrender.com/Cars')
     .then(resp => resp.json())
     .then(carData => carData.forEach(car => renderOneCar(car)))
 }   
