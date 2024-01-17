@@ -1,0 +1,52 @@
+{
+    "Cars": [
+      {
+        "id": 1,
+        "brand": "BMW",
+        "model": "BMW M80i xDrive",
+        "imageUrl": "https://www.mad4wheels.com/img/free-car-images/desktop/19402/bmw-m850i-g16-gran-coupe-xdrive-2022-660606.jpg",
+        "price": "$60 per day",
+        "available": 30
+      },
+      {
+        "id": 2,
+        "brand": "AUDI",
+        "model": "Audi Q5",
+        "imageUrl": "https://www.mad4wheels.com/img/free-car-images/desktop/18589/audi-q5-55-tfsi-e-quattro-usa-version-2021-614642.jpg",
+        "price": "$75 per day",
+        "available": 20
+      },
+      {
+        "id": 3,
+        "brand": "MERCEDES",
+        "model": "Mercedes AMG GT Range",
+        "imageUrl": "https://www.mad4wheels.com/img/free-car-images/desktop/4440/mercedes-benz-sls-amg-2010-267056.jpg",
+        "price": "$100 per day",
+        "available": 25
+      },
+      {
+        "id": 4,
+        "brand": "PORSCHE",
+        "model": "Porsche 718",
+        "imageUrl": "https://www.mad4wheels.com/img/free-car-images/desktop/17397/porsche-718-982-spyder-2019-551810.jpg",
+        "price": "$90 per day",
+        "available": 10
+      },
+      {
+        "id": 5,
+        "brand": "FERRARI",
+        "model": "Ferrari F8 Tributo",
+        "imageUrl": "https://www.mad4wheels.com/img/free-car-images/desktop/18999/ferrari-f8-tributo-by-novitec-n-largo-2021-637432.jpg",
+        "price": "$250 per day",
+        "available": 2
+      },
+      {
+        "id": 6,
+        "brand": "MCLAREN",
+        "model": "McLaren Artura",
+        "imageUrl": "https://www.mad4wheels.com/img/free-car-images/desktop/18706/mclaren-artura-2022-749365.jpg",
+        "price": "$200 per day",
+        "available": 3
+      }
+    ]
+  }
