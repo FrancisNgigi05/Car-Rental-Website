@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link CSS -->
     <link rel="stylesheet" href="./style.css">
     <title>Car Rental</title>
@@ -11,14 +13,19 @@
     <!-- Header -->
     <header>
         <nav class="nav_menu">
-            <img src="./src/img/logo.png" alt="Logo" class="nav_logo">
-            <div class="nav_links">
+            <div class="logo">
+                <img src="./src/img/logo.png" alt="Logo">
+            </div>
+            <div class="nav_links" id="nav-links">
                 <ul>
                     <li><a class="nav_link" href="#home">Home</a></li>
                     <li><a class="nav_link" href="#add">Add Cars</a></li>
                     <li><a class="nav_link" href="#available">Available Cars</a></li>
                 </ul>
             </div>
+            <!-- <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div> -->
         </nav>
     </header>
 
@@ -64,7 +71,9 @@
     <!-- Footer -->
     <footer>
         <div class="footer_container">
-            <img src="./src/img/logo.png" alt="Logo">
+            <div class="logo">
+                <img src="./src/img/logo.png" alt="Logo">
+            </div>
             <div>
                 <p class="footer_copyright">&#169:
                     AlexKimeu. All right reserved
