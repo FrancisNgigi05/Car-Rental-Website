@@ -60,16 +60,17 @@ a{
 button{
     border: none;
     cursor: pointer;
-    padding: 8px 15px;
+    padding: 6px 12px;
     border-radius: 50px;
     background-color: var(--secondary-color);
     transition: all 0.3s ease 0s;
-    color: var(--primary-color);
+    color: var(--accent-color);
     font-size: var(--font-size-regular);
     font-weight: var(--font-weight-regular);
 }
 button:hover{
-    background-color: var(--secondary-color-dark);
+    /* background-color: var(--secondary-color-dark); */
+    color: var(--primary-color);
 }
 .container{
     padding: 20px 120px;
@@ -77,7 +78,7 @@ button:hover{
 
 /* Header */
 header{
-    padding: 10px 120px;
+    padding: 10px 200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .nav_menu, .nav_links ul{
@@ -127,22 +128,21 @@ header{
 }
 
 /* Add Cars */
-.cars_container{
+.add_container{
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 .form_card{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     width: 350px;
     height: 350px;
     background-color: var(--primary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 10px 15px;
 }
 .form_title{
     font-size: var(--font-size-regular);
@@ -210,6 +210,7 @@ input[type=url]{
 .content h2{
     font-size: var(--font-size-regular);
     font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
 }
 .content p{
     font-size: var(--font-size-small);
@@ -218,7 +219,12 @@ input[type=url]{
 .car_count{
     font-weight: bold;
 }
-
+.card_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
 /* Footer */
 .footer_container{
     display: flex;

@@ -19,7 +19,6 @@
                     <li><a class="nav_link" href="#available">Available Cars</a></li>
                 </ul>
             </div>
-                <a href="#remove" class="contact_btn"><button type="button">Remove</button></a>
         </nav>
     </header>
 
@@ -38,17 +37,17 @@
     </section>
     
     <!-- Add Cars -->
-    <section class="container cars_container" id="add">
+    <section class="container add_container" id="add">
         <h1 class="title">Car Keys playing hide and seek?</h1>
         <h3 class="subtitle">Level up the game and add a new car to the fleet</h3>
         <div class="form_card">
             <h3 class="form_title">Enter Details of car to add</h3>
-            <form class="form">
-                <input name="car brand" id="car-brand" type="text" placeholder="Car Brand">
+            <form class="form" id="car-form">
+                <input name="brand" id="car-brand" type="text" placeholder="Car Brand">
                 <input name="model" id="car-model" type="text" placeholder="Model">
-                <input name="rental price" id="price" type="text" placeholder="Rental Price">
+                <input name="price" id="price" type="text" placeholder="Rental Price">
                 <input name="available" id="cars-available" type="text" placeholder="Units Available">
-                <input name="image" id="car-picture" type="url" placeholder="Image URL">
+                <input name="imageUrl" id="car-picture" type="url" placeholder="Image URL">
                 <button type="submit" class="add_btn">Add</button>
             </form>
         </div>
