@@ -13,6 +13,9 @@ function handleSubmit(e) {
     }
     renderOneCar(carObj)
     reserveCar(carObj)
+    
+    // Reset the form
+    e.target.reset();
 }
 
 // DOM Render Functions
@@ -25,7 +28,7 @@ function renderOneCar(car) {
         <div class="content">
             <h2>${car.brand}</h2>
             <p>${car.model}</p>
-            <p>${car.price}</p>
+            <p>$${car.price} per day</p>
             <p>
                 <span class="car_count">${car.available}</span> Available
             </p>
@@ -69,6 +72,7 @@ function reserveCar(carObj) {
     })
     .then(res => res.json())
     .then(car => console.log(car))
+    .catch(error => console.log(error))
 }
 
 // Patch Fetch for a car resource
