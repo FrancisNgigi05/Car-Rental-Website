@@ -28,7 +28,9 @@ function renderOneCar(car) {
         <div class="content">
             <h2>${car.brand}</h2>
             <p>${car.model}</p>
-            <p>$${car.price} per day</p>
+            <p>
+            <span class="car_price">$${car.price}</span> Per Day
+            </p>
             <p>
                 <span class="car_count">${car.available}</span> Available
             </p>

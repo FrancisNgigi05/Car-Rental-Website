@@ -232,8 +232,11 @@ input[type=number]{
     font-weight: var(--font-weight-regular);
     text-transform: capitalize;
 }
+.car_price{
+    font-weight: var(--font-weight-bold);
+}
 .car_count{
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
 }
 .card_buttons{
     display: flex;
