@@ -33,6 +33,7 @@ function renderOneCar(car) {
     // Build the car card container
     let card = document.createElement('li');
     card.className = 'card';
+    card.id = `car-${car.id}`; 
     card.innerHTML = `
         <img src="${car.imageUrl}">
         <div class="content">
@@ -49,10 +50,15 @@ function renderOneCar(car) {
         </div> 
     `
     card.querySelector('#reserve').addEventListener('click', () => {
-        car.available -= 1
-        card.querySelector('span').textContent = car.available
-        updateCar(car)
-    })
+        if (car.available > 0) {
+            car.available -= 1;
+            card.querySelector('span').textContent = car.available;
+            updateCar(car);
+        } else {
+            alert("No more cars available for reservation!");
+        }
+    });
+    
     card.querySelector('#remove').addEventListener('click', () => {
         card.remove()
         deleteCar(car.id)
@@ -109,7 +115,7 @@ function deleteCar(id) {
     .then(res => res.json())
     .then(car => console.log(car))
 }
-
+ 
 // Initialize Render
 // Get all cars and render our cars to the DOM
 function initialize() {
