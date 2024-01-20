@@ -8,6 +8,26 @@ window.onload = function(){
   })
   }
 
+// For Search Button
+document.getElementById('searchButton').addEventListener('click', handleSearch);
+
+function handleSearch() {
+    const searchTerm = document.getElementById('search').value.toLowerCase();
+    const filteredCars = cars.filter(car => car.model.toLowerCase().includes(searchTerm));
+
+    // Clear the current car list
+    const carListContainer = document.getElementById('car-list');
+    carListContainer.innerHTML = '';
+
+    // Render the filtered cars
+    filteredCars.forEach(car => {
+        renderOneCar(car);
+    });
+
+    // Clear the search input
+    document.getElementById('search').value = '';
+}
+
 // Event Listeners
 document.querySelector('#car-form').addEventListener('submit', handleSubmit)
 
@@ -71,11 +91,17 @@ function renderOneCar(car) {
 
 // Fetch Requests
 // Get Fetch for all car resources
+let cars = [];
+
 function getAllCars() {
     fetch('https://cars-api-v2.vercel.app/Cars')
-    .then(resp => resp.json())
-    .then(carData => carData.forEach(car => renderOneCar(car)))
-} 
+        .then(resp => resp.json())
+        .then(carData => {
+            cars = carData;
+            carData.forEach(car => renderOneCar(car));
+        })
+        .catch(error => console.log(error));
+}
 
 // Post Fetch for a new car resource
 function reserveCar(carObj) {
