@@ -58,7 +58,7 @@ h1, h2, h3, p{
     font-weight: var(--font-weight-extra-light);
     color: var(--accent-color);
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
 }
 button{
@@ -173,14 +173,6 @@ header{
     font-weight: var(--font-weight-regular);
     color: var(--accent-color);
 }
-.search_container{
-    display: flex;
-    gap: 10px;
-}
-.search_btn{
-    align-self: center;
-    color: var(--primary-color);
-}
 .home_img {
     text-align: center; 
 }
@@ -293,6 +285,15 @@ input[type=number]{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+}
+.search_container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.search_btn{
+    align-self: center;
+    color: var(--primary-color);
 }
 /* Footer */
 .footer_container{
