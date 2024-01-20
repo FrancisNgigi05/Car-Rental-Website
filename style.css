@@ -58,7 +58,7 @@ h1, h2, h3, p{
     font-weight: var(--font-weight-extra-light);
     color: var(--accent-color);
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 button{
@@ -289,7 +289,7 @@ input[type=number]{
 .search_container{
     display: flex;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 .search_btn{
     align-self: center;
