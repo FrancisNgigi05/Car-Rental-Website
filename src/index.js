@@ -94,7 +94,7 @@ function renderOneCar(car) {
 let cars = [];
 
 function getAllCars() {
-    fetch('https://cars-api-v2.vercel.app/Cars')
+    fetch('https://cars-api-m7at.onrender.com/Cars')
         .then(resp => resp.json())
         .then(carData => {
             cars = carData;
@@ -105,7 +105,7 @@ function getAllCars() {
 
 // Post Fetch for a new car resource
 function reserveCar(carObj) {
-    fetch('https://cars-api-v2.vercel.app/Cars', {
+    fetch('https://cars-api-m7at.onrender.com/Cars', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -119,7 +119,7 @@ function reserveCar(carObj) {
 
 // Patch Fetch for a car resource
 function updateCar(carObj) {
-    fetch(`https://cars-api-v2.vercel.app/Cars/${carObj.id}`, {
+    fetch(`https://cars-api-m7at.onrender.com/Cars/${carObj.id}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
@@ -132,7 +132,7 @@ function updateCar(carObj) {
 
 // Delete Fetch for a car resource
 function deleteCar(id) {
-    fetch(`https://cars-api-v2.vercel.app/Cars/${id}`, {
+    fetch(`https://cars-api-m7at.onrender.com/Cars/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'
