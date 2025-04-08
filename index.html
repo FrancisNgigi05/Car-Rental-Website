@@ -1,95 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
-    <!-- BoxIcons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="./style.css">
-    <title>Car Rental</title>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="./src/img/logo.png" alt="logo">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
+        <!-- BoxIcons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="./style.css">
+        <title>Car Rental</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./src/img/logo.png" alt="logo">
+                </div>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li> 
+                        <li><a href="#add">Add cars</a></li>
+                        <li><a href="#available">Available</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Toggle menu -->
+            <div class="toggle-button">
+                <i class='bx bx-menu close'></i>
             </div>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#home">Home</a></li> 
-                    <li><a href="#add">Add cars</a></li>
-                    <li><a href="#available">Available</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Toggle menu -->
-        <div class="toggle-button">
-            <i class='bx bx-menu close'></i>
-        </div>
-    </header>
+        </header>
 
-    <!-- Home -->
-    <section class="container" id="home">
-        <div class="home_content">
-            <div class="home_description">
-                <h1>You Premium Car Rental</h1>
-                <h2>Service.</h2>
-                <p>Drive Your Dreams: Where Every Mile Feels Like a Journey!</p>
+        <!-- Home -->
+        <section class="container" id="home">
+            <div class="home_content">
+                <div class="home_description">
+                    <h1>You Premium Car Rental</h1>
+                    <h2>Service.</h2>
+                    <p>Drive Your Dreams: Where Every Mile Feels Like a Journey!</p>
+                </div>
+                <div class="home_img">
+                    <img src="./src/img/Background.png" alt="Home Img">
+                </div>
             </div>
-            <div class="home_img">
-                <img src="./src/img/Background.png" alt="Home Img">
+        </section>
+        
+        <!-- Add Cars -->
+        <section class="container add_container" id="add">
+            <h1 class="title">Car Keys playing hide and seek?</h1>
+            <h3 class="subtitle">Level up the game and add a new car to the fleet</h3>
+            <div class="form_card">
+                <h3 class="form_title">Enter Details of car to add</h3>
+                <form class="form" id="car-form">
+                    <input name="brand" id="car-brand" type="text" placeholder="Car Brand">
+                    <input name="model" id="car-model" type="text" placeholder="Model">
+                    <input name="price" id="price" type="number" placeholder="Rental Price">
+                    <input name="available" id="cars-available" type="number" placeholder="Units Available">
+                    <input name="imageUrl" id="car-picture" type="url" placeholder="Image URL">
+                    <button type="submit" class="add_btn">Add</button>
+                </form>
             </div>
-        </div>
-    </section>
-    
-    <!-- Add Cars -->
-    <section class="container add_container" id="add">
-        <h1 class="title">Car Keys playing hide and seek?</h1>
-        <h3 class="subtitle">Level up the game and add a new car to the fleet</h3>
-        <div class="form_card">
-            <h3 class="form_title">Enter Details of car to add</h3>
-            <form class="form" id="car-form">
-                <input name="brand" id="car-brand" type="text" placeholder="Car Brand">
-                <input name="model" id="car-model" type="text" placeholder="Model">
-                <input name="price" id="price" type="number" placeholder="Rental Price">
-                <input name="available" id="cars-available" type="number" placeholder="Units Available">
-                <input name="imageUrl" id="car-picture" type="url" placeholder="Image URL">
-                <button type="submit" class="add_btn">Add</button>
-            </form>
-        </div>
-    </section>
+        </section>
 
-    <!-- Available Cars -->
-    <section class="container" id="available">
-        <h1 class="title">Options On Wheels</h1>
-        <h3 class="subtitle">Explore available cars now</h3>
-        <div class="search_container">
-            <input type="text" id="search" placeholder="Car Brand">
-            <button type="submit" id="searchButton" class="search_btn">Search</button>
-        </div>
-        <!-- Data rendered from json -->
-        <ul id="car-list" class="card"></ul>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer_container">
-            <div class="logo">
-                <img src="./src/img/logo.png" alt="Logo">
+        <!-- Available Cars -->
+        <section class="container" id="available">
+            <h1 class="title">Options On Wheels</h1>
+            <h3 class="subtitle">Explore available cars now</h3>
+            <div class="search_container">
+                <input type="text" id="search" placeholder="Car Brand">
+                <button type="submit" id="searchButton" class="search_btn">Search</button>
             </div>
-            <div>
-                <p class="footer_copyright">&#169:
-                    AlexKimeu. All right reserved
-                </p>
-            </div>
-        </div>
-    </footer>
+            <!-- Data rendered from json -->
+            <ul id="car-list" class="card"></ul>
+        </section>
 
-    <!-- Link JS -->
-    <script src="./src/index.js"></script>
-</body>
-</html>
+        <!-- Footer -->
+        <footer>
+            <div class="footer_container">
+                <div class="logo">
+                    <img src="./src/img/logo.png" alt="Logo">
+                </div>
+                <div>
+                    <p class="footer_copyright">&#169:
+                        AlexKimeu. All right reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Link JS -->
+        <script src="./src/index.js"></script>
+    </body>
+    </html>
