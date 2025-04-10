@@ -265,15 +265,15 @@
         color: var(--accent-color);
     }
     .content h2{
-        font-size: var(--font-size-regular);
+        font-size: var(--font-size-regular); 
         font-weight: var(--font-weight-bold);
         text-transform: uppercase;
-    }
+    } 
     .content p{
         font-size: var(--font-size-small);
         font-weight: var(--font-weight-regular);
         text-transform: capitalize;
-    }
+    } 
     .car_price{
         font-weight: var(--font-weight-bold);
     }
@@ -285,16 +285,16 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-    }
+    } 
     .search_container{
         display: flex;
         gap: 10px;
         margin-bottom: 12px;
-    }
+    } 
     .search_btn{
         align-self: center;
         color: var(--primary-color);
-    }
+    } 
     /* Footer */
     .footer_container{
         padding: 5px;
@@ -326,7 +326,7 @@
         .home_description h1, h2{
             font-size: var(--font-size-medium);
         }
-    }
+    } 
     @media screen and (max-width: 830px){
         .container{
             padding: 0 40px;
